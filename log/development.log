@@ -4434,3 +4434,1228 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 421ms (Views: 400.6ms | ActiveRecord: 4.2ms)
 
 
+Started GET "/" for ::1 at 2023-01-12 11:19:21 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (1.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 371ms (Views: 348.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/google.com" for ::1 at 2023-01-12 11:19:27 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-12 11:20:45 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-12 11:21:13 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.9ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 362ms (Views: 341.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/" for ::1 at 2023-01-12 11:24:16 +0300
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 337ms (Views: 318.6ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/google.com" for ::1 at 2023-01-12 11:24:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-12 11:30:00 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 309ms (Views: 293.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/google.com" for ::1 at 2023-01-12 11:30:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-19 16:13:20 +0300
+  [1m[35m (51.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (101.8ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (197.8ms)
+Completed 200 OK in 705ms (Views: 513.9ms | ActiveRecord: 161.6ms)
+
+
+Started GET "/google.com" for ::1 at 2023-01-19 16:13:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/google.com" for ::1 at 2023-01-19 16:14:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:14:24 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for ::1 at 2023-01-19 16:14:35 +0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (46.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (64.9ms)
+Completed 200 OK in 140ms (Views: 35.8ms | ActiveRecord: 54.5ms)
+
+
+Started GET "/users" for ::1 at 2023-01-19 16:16:09 +0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 35ms (Views: 26.1ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:16:13 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 114ms (Views: 22.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:17:49 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (104.8ms)
+  Rendered rides/new.html.erb within layouts/application (106.2ms)
+Completed 200 OK in 138ms (Views: 126.5ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/rides" for ::1 at 2023-01-19 16:18:25 +0300
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f8MbZqKzqILJ5g+JHIb+yTUGUpY74PQ0vTP2cdYFpvKEBIuCMUAG1yGGjsvs+DT5Uej9blU+9XKb9yQmu+770A==", "ride"=>{"ridetype"=>"offer", "origin"=>"Nairobi", "destination"=>"Kisumu", "takeoff(1i)"=>"2022", "takeoff(2i)"=>"12", "takeoff(3i)"=>"20", "takeoff(4i)"=>"18", "takeoff(5i)"=>"03", "noofpeople"=>"4"}, "submit"=>"Create Ride"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (81.6ms)[0m  [1m[32mINSERT INTO "rides" ("ridetype", "origin", "destination", "takeoff", "noofpeople", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["ridetype", 0], ["origin", "Nairobi"], ["destination", "Kisumu"], ["takeoff", "2022-12-20 18:03:00"], ["noofpeople", 4], ["created_at", "2023-01-19 13:18:25.514454"], ["updated_at", "2023-01-19 13:18:25.514454"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (48.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/4
+Completed 302 Found in 136ms (ActiveRecord: 130.4ms)
+
+
+Started GET "/rides/4" for ::1 at 2023-01-19 16:18:25 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:18:30 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:19:48 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome/google.com" for ::1 at 2023-01-19 16:20:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome/google.com" for ::1 at 2023-01-19 16:20:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/google.com"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:23:05 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:24:50 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 107ms (Views: 104.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:25:18 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:25:30 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:28
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 86ms (Views: 83.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:29:04 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.0ms)
+  Rendered rides/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:32:29 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.0ms)
+  Rendered rides/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:32:31 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.7ms)
+  Rendered rides/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:32:32 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (9.8ms)
+  Rendered rides/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:32:32 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (9.5ms)
+  Rendered rides/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:33:07 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (11.2ms)
+  Rendered rides/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:34:47 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (2.2ms)
+  Rendered rides/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:17: syntax error, unexpected string literal, expecting ')'
+...=( form.label :origin, :class 'label' );@output_buffer.safe_...
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:21: syntax error, unexpected string literal, expecting ')'
+...m.label :destination , :class 'label');@output_buffer.safe_a...
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:25: syntax error, unexpected string literal, expecting ')'
+... form.label :takeoff , :class 'label');@output_buffer.safe_a...
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:29: syntax error, unexpected string literal, expecting ')'
+...rm.label :noofpeople , :class 'label');@output_buffer.safe_a...
+...                              ^
+):
+  
+app/views/rides/_form.html.erb:17: syntax error, unexpected string literal, expecting ')'
+app/views/rides/_form.html.erb:21: syntax error, unexpected string literal, expecting ')'
+app/views/rides/_form.html.erb:25: syntax error, unexpected string literal, expecting ')'
+app/views/rides/_form.html.erb:29: syntax error, unexpected string literal, expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___3139394683444672793_31060'
+Started GET "/rides/new" for ::1 at 2023-01-19 16:34:49 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (1.2ms)
+  Rendered rides/new.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:17: syntax error, unexpected string literal, expecting ')'
+...=( form.label :origin, :class 'label' );@output_buffer.safe_...
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:21: syntax error, unexpected string literal, expecting ')'
+...m.label :destination , :class 'label');@output_buffer.safe_a...
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:25: syntax error, unexpected string literal, expecting ')'
+... form.label :takeoff , :class 'label');@output_buffer.safe_a...
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/_form.html.erb:29: syntax error, unexpected string literal, expecting ')'
+...rm.label :noofpeople , :class 'label');@output_buffer.safe_a...
+...                              ^
+):
+  
+app/views/rides/_form.html.erb:17: syntax error, unexpected string literal, expecting ')'
+app/views/rides/_form.html.erb:21: syntax error, unexpected string literal, expecting ')'
+app/views/rides/_form.html.erb:25: syntax error, unexpected string literal, expecting ')'
+app/views/rides/_form.html.erb:29: syntax error, unexpected string literal, expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___3139394683444672793_31600'
+Started GET "/rides/new" for ::1 at 2023-01-19 16:35:34 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (8.9ms)
+  Rendered rides/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:35:52 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.8ms)
+  Rendered rides/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:35:53 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.9ms)
+  Rendered rides/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:35:54 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.1ms)
+  Rendered rides/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:35:54 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (8.6ms)
+  Rendered rides/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:35:54 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (11.1ms)
+  Rendered rides/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:36:19 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (8.5ms)
+  Rendered rides/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:36:33 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.3ms)
+  Rendered rides/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:36:58 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (8.3ms)
+  Rendered rides/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:37:49 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.6ms)
+  Rendered rides/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for ::1 at 2023-01-19 16:39:31 +0300
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9NXHMMfv+oTdMElkLAVlMNLW9rRtZTZ2HaIsRw0/aG6vSO09i+VQFNNW1rPfcRMsVvuU4Hs1qsB+SZVtYJ75Dg==", "ride"=>{"ridetype"=>"request", "origin"=>"Mwea", "destination"=>"Kisumu", "takeoff(1i)"=>"2023", "takeoff(2i)"=>"1", "takeoff(3i)"=>"19", "takeoff(4i)"=>"13", "takeoff(5i)"=>"37", "noofpeople"=>"2"}, "submit"=>"Create Ride"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.6ms)[0m  [1m[32mINSERT INTO "rides" ("ridetype", "origin", "destination", "takeoff", "noofpeople", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["ridetype", 1], ["origin", "Mwea"], ["destination", "Kisumu"], ["takeoff", "2023-01-19 13:37:00"], ["noofpeople", 2], ["created_at", "2023-01-19 13:39:31.524808"], ["updated_at", "2023-01-19 13:39:31.524808"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/5
+Completed 302 Found in 38ms (ActiveRecord: 31.5ms)
+
+
+Started GET "/rides/5" for ::1 at 2023-01-19 16:39:31 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides/5/edit" for ::1 at 2023-01-19 16:39:35 +0300
+Processing by RidesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/edit.html.erb within layouts/application
+  Rendered rides/_form.html.erb (12.0ms)
+  Rendered rides/edit.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:39:37 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:40:20 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/rides/3" for ::1 at 2023-01-19 16:41:56 +0300
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+ovfNOFPxUOZbvQO6dnSXmZD9igCfPEgThicfPqlpUuhFvU5rUVv05cIa9karaRC4m6UfBQsbZYt8yVWlwQ0Kw==", "id"=>"3"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:57
+  [1m[36mRide Destroy (1.4ms)[0m  [1m[31mDELETE FROM "rides" WHERE "rides"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/rides_controller.rb:57
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:57
+Redirected to http://localhost:3000/rides
+Completed 302 Found in 19ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:41:56 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  Rendered rides/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:37: syntax error, unexpected ')'
+...r.append=( link_to 'Welcome', );
+...                              ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:40: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:42: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/rides/index.html.erb:37: syntax error, unexpected ')'
+app/views/rides/index.html.erb:40: syntax error, unexpected `ensure', expecting ')'
+app/views/rides/index.html.erb:42: syntax error, unexpected `end', expecting ')'
+Started GET "/rides" for ::1 at 2023-01-19 16:42:15 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (237.0ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `welcome_path' for #<#<Class:0x00007f34c02b90c0>:0x00007f34c00b06c0>
+Did you mean?  welcome_index_path):
+    34: 
+    35: <%= link_to 'New Ride', new_ride_path %>
+    36: 
+    37: <%= link_to 'Welcome', welcome_path %>
+  
+app/views/rides/index.html.erb:37:in `_app_views_rides_index_html_erb___2167525868644539175_34160'
+Started GET "/rides" for ::1 at 2023-01-19 16:42:40 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (1.1ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (325.6ms)
+Completed 500 Internal Server Error in 331ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x00007f34c02b90c0>:0x00007f34c0121f78>):
+    34: 
+    35: <%= link_to 'New Ride', new_ride_path %>
+    36: 
+    37: <%= link_to 'Welcome', root %>
+  
+app/views/rides/index.html.erb:37:in `_app_views_rides_index_html_erb___2167525868644539175_34800'
+Started GET "/rides" for ::1 at 2023-01-19 16:42:55 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2023-01-19 16:42:57 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2023-01-19 16:43:01 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/rides/5" for ::1 at 2023-01-19 16:43:06 +0300
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/ieLAk+pBX3kBRBUVCCr1mGhcSJaRXr9EtPWirl80L2luqEPA6Ov7epjj4OnVN3K5YwTdkwV5ktxOG+g1N1B3Q==", "id"=>"5"}
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:57
+  [1m[36mRide Destroy (0.5ms)[0m  [1m[31mDELETE FROM "rides" WHERE "rides"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/rides_controller.rb:57
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:57
+Redirected to http://localhost:3000/rides
+Completed 302 Found in 12ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:43:06 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:43:13 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.6ms)
+  Rendered rides/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:43:18 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.9ms)
+  Rendered rides/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-01-19 16:43:21 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:46:58 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  Rendered rides/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:35: syntax error, unexpected =>
+...Ride', new_ride_path, class: => 'button' );@output_buffer.sa...
+...                             ^~
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:37: syntax error, unexpected =>
+...'Welcome', root_path, class: => 'button);
+...                             ^~
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:42: unterminated string meets end of file
+          end
+             ^
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:42: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/rides/index.html.erb:35: syntax error, unexpected =>
+app/views/rides/index.html.erb:37: syntax error, unexpected =>
+app/views/rides/index.html.erb:42: unterminated string meets end of file
+app/views/rides/index.html.erb:42: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/rides" for ::1 at 2023-01-19 16:47:26 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  Rendered rides/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:35: syntax error, unexpected =>
+...Ride', new_ride_path, class: => 'button' );@output_buffer.sa...
+...                             ^~
+/home/petrolhead/Documents/projects/Ridesharing-system/app/views/rides/index.html.erb:37: syntax error, unexpected =>
+...'Welcome', root_path, class: => 'button' );
+...                             ^~
+):
+  
+app/views/rides/index.html.erb:35: syntax error, unexpected =>
+app/views/rides/index.html.erb:37: syntax error, unexpected =>
+Started GET "/rides" for ::1 at 2023-01-19 16:49:05 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:49:15 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (12.4ms)
+  Rendered rides/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:49:43 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:49:47 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (8.9ms)
+  Rendered rides/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-01-19 16:49:49 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:50:39 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:51:28 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:51:38 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (1.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:53:15 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:53:30 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:53:41 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:53:55 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:54:17 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/4" for ::1 at 2023-01-19 16:54:22 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRide Load (1.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:54:26 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.8ms)
+  Rendered rides/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for ::1 at 2023-01-19 16:54:30 +0300
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IEpfvaiI8cMxqZH6oI4NHeKHDUHDa6QyiO/nGomOJ6Dbjc9ZO3tfltnJELhQ8Mcthmmiua21pXSuKzVN5GV6gg==", "ride"=>{"ridetype"=>"request", "origin"=>"", "destination"=>"", "takeoff(1i)"=>"2023", "takeoff(2i)"=>"1", "takeoff(3i)"=>"19", "takeoff(4i)"=>"13", "takeoff(5i)"=>"54", "noofpeople"=>""}, "submit"=>"Create Ride"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.7ms)[0m  [1m[32mINSERT INTO "rides" ("ridetype", "origin", "destination", "takeoff", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["ridetype", 1], ["origin", ""], ["destination", ""], ["takeoff", "2023-01-19 13:54:00"], ["created_at", "2023-01-19 13:54:30.488159"], ["updated_at", "2023-01-19 13:54:30.488159"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/6
+Completed 302 Found in 25ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/rides/6" for ::1 at 2023-01-19 16:54:30 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides/6/edit" for ::1 at 2023-01-19 16:54:33 +0300
+Processing by RidesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/edit.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.7ms)
+  Rendered rides/edit.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/rides/6" for ::1 at 2023-01-19 16:54:42 +0300
+Processing by RidesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wp9dbpG1kxMpt7J/tH/zuHk4/91BnMzavFzKGNP1DLhekjOkfh8+oDrUGZukvirc5+t90GIPIS/Y2Ev8xIP19Q==", "ride"=>{"ridetype"=>"request", "origin"=>"Nairobi", "destination"=>"Kisumu", "takeoff(1i)"=>"2023", "takeoff(2i)"=>"1", "takeoff(3i)"=>"19", "takeoff(4i)"=>"13", "takeoff(5i)"=>"54", "noofpeople"=>"1"}, "submit"=>"Create Ride", "id"=>"6"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:44
+  [1m[36mRide Update (0.9ms)[0m  [1m[33mUPDATE "rides" SET "origin" = $1, "destination" = $2, "noofpeople" = $3, "updated_at" = $4 WHERE "rides"."id" = $5[0m  [["origin", "Nairobi"], ["destination", "Kisumu"], ["noofpeople", 1], ["updated_at", "2023-01-19 13:54:42.023672"], ["id", 6]]
+  ↳ app/controllers/rides_controller.rb:44
+  [1m[35m (37.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:44
+Redirected to http://localhost:3000/rides/6
+Completed 302 Found in 47ms (ActiveRecord: 39.1ms)
+
+
+Started GET "/rides/6" for ::1 at 2023-01-19 16:54:42 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:54:43 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:54:54 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (9.5ms)
+  Rendered rides/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for ::1 at 2023-01-19 16:54:55 +0300
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R4F2gQEAHP+fUptsNEjg+ZysfVtBE4VFnJ518kzu7168RuZlkvOyqncyGi7ENirJ+ELSoy/NhAO6WqelIQWyfA==", "ride"=>{"ridetype"=>"offer", "origin"=>"", "destination"=>"", "takeoff(1i)"=>"2023", "takeoff(2i)"=>"1", "takeoff(3i)"=>"19", "takeoff(4i)"=>"13", "takeoff(5i)"=>"54", "noofpeople"=>""}, "submit"=>"Create Ride"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (1.1ms)[0m  [1m[32mINSERT INTO "rides" ("ridetype", "origin", "destination", "takeoff", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["ridetype", 0], ["origin", ""], ["destination", ""], ["takeoff", "2023-01-19 13:54:00"], ["created_at", "2023-01-19 13:54:55.544202"], ["updated_at", "2023-01-19 13:54:55.544202"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/7
+Completed 302 Found in 25ms (ActiveRecord: 18.4ms)
+
+
+Started GET "/rides/7" for ::1 at 2023-01-19 16:54:55 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:54:58 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (1.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rides/4" for ::1 at 2023-01-19 16:55:16 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:58:00 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/6" for ::1 at 2023-01-19 16:58:03 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (2.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/rides/6" for ::1 at 2023-01-19 16:58:05 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for ::1 at 2023-01-19 16:58:08 +0300
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:18
+  Rendered rides/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides/5/edit" for ::1 at 2023-01-19 16:58:09 +0300
+Processing by RidesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=5):
+  
+app/controllers/rides_controller.rb:67:in `set_ride'
+Started GET "/rides/5" for ::1 at 2023-01-19 16:58:15 +0300
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=5):
+  
+app/controllers/rides_controller.rb:67:in `set_ride'
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:58:15 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/welcome/index" for ::1 at 2023-01-19 16:58:31 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides/new" for ::1 at 2023-01-19 16:58:41 +0300
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.5ms)
+  Rendered rides/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for ::1 at 2023-01-19 17:00:50 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRide Load (1.1ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/welcome/index.html.erb:27
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 1.1ms)
+
+

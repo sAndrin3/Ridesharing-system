@@ -10,23 +10,23 @@
     </div>
   <% end %>
   <div class="field">
-    <%= form.label :ridetype %>
+    <%= form.label :ridetype, :class => 'label' %>
     <%= form.select :ridetype, ["offer", "request"] %>
   </div>
   <div class="field">
-    <%= form.label :origin %>
+    <%= form.label :origin, :class => 'label' %>
     <%= form.text_field :origin %>
   </div>
   <div class="field">
-    <%= form.label :destination %>
+    <%= form.label :destination , :class => 'label'%>
     <%= form.text_field :destination %>
   </div>
   <div class="field">
-    <%= form.label :takeoff %>
+    <%= form.label :takeoff , :class => 'label'%>
     <%= form.datetime_select :takeoff %>
   </div>
   <div class="field">
-    <%= form.label :noofpeople %>
+    <%= form.label :noofpeople , :class => 'label'%>
     <%= form.number_field :noofpeople %>
   </div>
   <div class="actions">

@@ -9,7 +9,7 @@
       <th>Origin</th>
       <th>Destination</th>
       <th>Takeoff</th>
-      <th>Noofpeople</th>
+      <th>No. of people</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,9 +22,9 @@
         <td><%= ride.destination %></td>
         <td><%= ride.takeoff %></td>
         <td><%= ride.noofpeople %></td>
-        <td><%= link_to 'Show', ride %></td>
-        <td><%= link_to 'Edit', edit_ride_path(ride) %></td>
-        <td><%= link_to 'Destroy', ride, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', ride, :class => 'button'%></td>
+        <td><%= link_to 'Edit', edit_ride_path(ride), :class => 'button' %></td>
+        <td><%= link_to 'Destroy', ride, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'button' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,6 @@
 
 <br>
 
-<%= link_to 'New Ride', new_ride_path %>
+<%= link_to 'New Ride', new_ride_path, :class => 'button' %>
+
+<%= link_to 'Welcome', root_path, :class => 'button' %>
